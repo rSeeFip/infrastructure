@@ -21,3 +21,16 @@ spec:
               value: "4000"
             - name: ChannelAssistant__LinkCodeTtlMinutes
               value: "10"
+            - name: InferenceGateway__ServiceAuth__Enabled
+              value: "true"
+            - name: InferenceGateway__ServiceAuth__TokenEndpoint
+              value: http://keycloak.platform-identity.svc.cluster.local:8080/auth/realms/nem/protocol/openid-connect/token
+            - name: InferenceGateway__ServiceAuth__ClientId
+              value: mimir-api
+            - name: InferenceGateway__ServiceAuth__Audience
+              value: nem-inferencegateway-api
+            - name: InferenceGateway__ServiceAuth__ClientSecret
+              valueFrom:
+                secretKeyRef:
+                  name: nem-mimir-inference-auth
+                  key: client-secret
