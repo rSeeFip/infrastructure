@@ -10,7 +10,7 @@ spec:
         - name: nem-mimir
           env:
             - name: Database__ApplyMigrations
-              value: "false"
+              value: "true"
             - name: ChannelAssistant__Enabled
               value: "true"
             - name: ChannelAssistant__RequireLinkedIdentity
