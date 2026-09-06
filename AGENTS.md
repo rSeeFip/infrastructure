@@ -67,6 +67,5 @@ Never commit `.env` or secrets files; use OpenBao for credentials in production.
 
 ## KnowHub MCP Usage (Mandatory)
 
-- Use the `knowhub` MCP server for production knowledge and code queries.
-- Use the `knowhub-dev` MCP server for development validation and pre-release queries.
-- Always pass `tenantId="nem"` to both `knowhub` and `knowhub-dev` tools.
+- Use the `knowhub` MCP server for production, development validation, code, and knowledge queries.
+- Always pass `tenantId="nem"` to `knowhub` tools.
